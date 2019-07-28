@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>Welcome to Rex-Foundation</title>
+<link href="css/ad-page.css" rel="stylesheet" type="text/css" />
+<link href="lib/bootstrap4/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+<link rel="stylesheet" href="lib/myfontawesome/fontawe.css" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,
+  	x,
+	a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('img/2660385_L.jpg')">
+<div class="page-container" id="page-container">
+
+  <div class="header" id="header">
+    <div class="header-nav navbar navbar-expand-sm sticky-top col-12" id="header-nav">
+      <div class="container">
+        <div class="col-md-3 navbar-header" style="text-align:left;" id="header-nav-left">Rex Foundations</div>
+        <div class="col-md-9" id="header-nav-right">
+          <nav>
+          <ul class="navbar navbar-nav">
+            <li class="active"><a href="index.html" class="active"><i class="ico ico-home"></i>Home</a></li>
+            <li><a href="#about-us"><i class="ico ico-aboutus"></i>About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="our-team">Our Team</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-content jumbotron" id="header-content">
+    	<h1>Hi!! </h1>
+        <h3>Designing is fun. <br/>Creativity is the key to a designs production.</h3>
+        <button class="btn" id="getstarted">Get Started</button>
+    </div>
+    
+  </div>
+  <div class="about-us" id="about-us">
+  <h1>About Us </h1>
+    <div class="row">
+      <div class="col-md-4" id="about-us-image"><a href="#about-us" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('about-img','','img/2660385_L.jpg',1)"><img src="img/about-image1.jpg" class="img-responsive about-img" alt="About us" id="about-img" /></a></div>
+      <div class="col-md-8 vertical-center-content" id="about-us-text">
+      	<div>
+<p>Odio sed id eos et laboriosam consequatur eos earum soluta.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p></div>
+		</div>
+    </div>
+  </div>
+  <div class="services" id="services">
+  <h1>Our Services</h1>
+  <div class="row" id="card-container"></div>
+  <script>
+  // This script adds cards
+  var card = '';
+  for (var i = 0; i<=5; i++){
+	  card += '<div class="col-md-4 col-lg-4" id="services-cards"><div class="card services-card" id="card"><div class="card-body" id="card-body"><div class="icon"><img class="img-rounded" src="img/logo1.png" alt="logoDesign" /><h3> Logo Design </h3></div><p>Content for  class "card" id "services" Goes HereSint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem al</p></div></div></div>'
+  }
+	$("#services .row").html(card); 
+	// End of script
+    </script>
+	</div>
+  <div class="portfolio" id="portfolio">
+  <h1>PortFolio</h1>
+  <div class="flex-container">Content for  class "portfolio" id "portfolio" Goes Here</div>
+  </div>
+  <script>
+  // This script adds cards
+  var card = '', m = 0;
+  var imgSrc = ['candlelight3.jpg','about-image1.jpg','788002_L.jpg'];
+  
+  for (var i = 0; i<=10; i++){
+	  m ++;
+	  if (m > 2){
+		  m = 0 ;
+	  }
+	  card += '<div class="flex-item item" id="portfolio-cards"><div class="card" id="card"><img src ="img//'+imgSrc[m]+'"/></div></div>'
+  }
+	$("#portfolio .flex-container").html(card); 
+	// End of script
+    </script>
+  <div class="our-team" id="our-team">
+  	<h1>Our Team</h1>
+    <div class="row" id="our-team-img-card">Content for  class "our-team" id "our-team" Goes Here</div>
+    <p id="more"><a href="#">Click here for more >>> </a></p>
+  </div>
+  <script>
+  // This script adds cards
+  var card = '';
+  var m;
+  for (var i = 0; i<=3; i++){
+	  m = 1+i;
+	  card += '<div class="col-md-3 col-lg-3 team-info" id="services-cards"><div class="card" id="card"><div class="card-body" id="team-card-body"><div class="team-img" id="team'+i+'-img" ><img src = "img//ourTeam ('+m+').jpg" class = "img-thumbnail" /></div><p>Content for  class "card" id "services" Goes Here</p></div></div></div>';
+  }
+	$("#our-team .row").html(card); 
+	// End of script
+    </script>
+  <div class="footer" id="footer">
+  
+  <!--Footer should contain the contact us and the newsletter -->
+  <div class="row">
+    <div class="col-md-4" id="foot1">
+     
+            <div class="footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
+              
+              <form action="" method="post">
+              <div class="input-group">
+                <input type="email" name="email2" class="form-control"/>
+                <div class="input-group-btn">
+                <input type="submit" class="btn btn-default" style="background:whitesmoke;"  value="Subscribe" /></div>
+                </div>
+              </form>
+            </div>
+     </div>
+     
+     <!--End of foot1-->
+    
+    <div class="col-md-4" id="foot2">
+         <div class="footer-contact-links">
+            <div class="footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Contact Us</h4>
+              <p>Choba,<br />
+                Uniport along East/West road,<br />
+                Rivers State.<br />
+                <strong>Phone:</strong> 09025615232<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+            <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+          </div>
+        </div>
+        
+        <!--End of foot2-->
+        
+    <div class="col-md-4" id="foot3">
+              
+              <h4>Send us a message</h4>
+              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+              <p class = "drop-contact-form"><a onclick = "slide()" style="cursor:pointer;">>>> Click here to Send us the message...</a></p>
+              <form action="" method="post" role="form" class="contact-form" style="display:none;">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div id="sendmessage" style="display:none;">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="text-center"><button type="submit" class="form-control" style="background:green;color:white;" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+            <script>
+			var i = 1;
+			function slide(){
+				
+				$('.contact-form').toggle(1000, function(){
+					window.i+=1;
+					console.log(i);
+						if(i%2 == 0){
+							$(".drop-contact-form a").html(">>> Click to close panel");
+						} else {
+							$(".drop-contact-form a").html(">>> Click here to Send us the message...");
+						}
+				});
+			}
+			</script>
+
+  </div>
+ </div>
+     
+  <div class="foot-footer">
+      <div class="copyright">
+        &copy; Copyright <strong>Rex foundation</strong>. All Rights Reserved
+    </div>
+      <div class="credits">
+        Designed by <a href="https://trexlive.wordpress.com/">Trex</a>
+      </div>
+  </div>
+</div>
+</body>
+</html>
